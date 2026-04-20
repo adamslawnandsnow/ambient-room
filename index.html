@@ -2,104 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Ambient Room</title>
+  <title>Chill Room</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="room-bg"></div>
+  <div class="scene-bg"></div>
 
-  <header class="topbar">
-    <div class="logo">ambient<span>room</span></div>
-    <nav>
-      <a href="#room">Room</a>
-      <a href="#vibes">Vibes</a>
-      <a href="#about">About</a>
-    </nav>
+  <header class="title-bar">
+    <div class="title-text"><!-- e.g. "chill room" or your handle --></div>
   </header>
 
-  <main>
-    <!-- Main room scene -->
-    <section class="room" id="room">
-      <div class="room-shell">
-        <div class="wall wall-left"></div>
-        <div class="wall wall-right"></div>
-        <div class="floor"></div>
+  <main class="scene">
+    <div class="room-box">
+      <div class="wall wall-left"></div>
+      <div class="wall wall-right"></div>
+      <div class="floor"></div>
 
-        <!-- Window with animated rain -->
-        <div class="window">
-          <div class="window-glow"></div>
-          <div class="rain-layer rain-1"></div>
-          <div class="rain-layer rain-2"></div>
-          <div class="rain-layer rain-3"></div>
-        </div>
-
-        <!-- Lamp -->
-        <div class="lamp">
-          <div class="lamp-neck"></div>
-          <div class="lamp-head"></div>
-          <div class="lamp-light"></div>
-        </div>
-
-        <!-- Desk -->
-        <div class="desk">
-          <div class="desk-top"></div>
-          <div class="desk-leg desk-leg-left"></div>
-          <div class="desk-leg desk-leg-right"></div>
-
-          <!-- Monitor -->
-          <div class="monitor">
-            <div class="monitor-screen">
-              <div class="screen-glow"></div>
-              <div class="screen-text">
-                <!-- You can put a small phrase here -->
-                <span><!-- e.g. "stay awhile" --></span>
-              </div>
-            </div>
-            <div class="monitor-stand"></div>
-          </div>
-        </div>
-
-        <!-- Small plants -->
-        <div class="plant plant-left"></div>
-        <div class="plant plant-right"></div>
+      <!-- window with subtle glow -->
+      <div class="window">
+        <div class="window-glow"></div>
+        <div class="window-pane"></div>
       </div>
 
-      <div class="room-caption">
-        <h1><!-- Title, e.g. "Late Night Ambient Room" --></h1>
-        <p><!-- One or two lines about the vibe, like "Rain on the window, soft screen glow, nothing urgent to do." --></p>
+      <!-- bed -->
+      <div class="bed">
+        <div class="bed-frame"></div>
+        <div class="bed-mattress"></div>
+        <div class="bed-pillow"></div>
+        <div class="bed-blanket"></div>
       </div>
-    </section>
 
-    <!-- Vibes / presets description -->
-    <section class="vibes" id="vibes">
-      <h2>Vibes</h2>
-      <div class="vibes-grid">
-        <div class="vibe-card">
-          <h3>Rainy Night</h3>
-          <p><!-- Describe this vibe: what you're imagining, sounds, mood. --></p>
-        </div>
-        <div class="vibe-card">
-          <h3>Quiet Desk</h3>
-          <p><!-- Describe what someone might imagine doing here (reading, coding, journaling…). --></p>
-        </div>
-        <div class="vibe-card">
-          <h3>Future Preset</h3>
-          <p><!-- You can write a plan for another vibe you might add later (sunset, neon, etc.). --></p>
-        </div>
+      <!-- sleeping cat on bed -->
+      <div class="cat">
+        <div class="cat-body"></div>
+        <div class="cat-head"></div>
+        <div class="cat-ear ear-left"></div>
+        <div class="cat-ear ear-right"></div>
+        <div class="cat-tail"></div>
+        <div class="cat-breath"></div>
       </div>
-    </section>
-
-    <!-- About section -->
-    <section class="about" id="about">
-      <h2>About this room</h2>
-      <p><!-- Explain in your own words why you made this, who it's for, or what you like about ambient spaces. --></p>
-      <p><!-- Optional: say something like "Built with HTML and CSS. Just a small place to zone out for a bit." --></p>
-    </section>
+    </div>
   </main>
-
-  <footer class="footer">
-    <p><!-- e.g. "&copy; 2026 Ambient Room · made by [your name/handle]" --></p>
-  </footer>
 </body>
 </html>
